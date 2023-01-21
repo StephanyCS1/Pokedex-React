@@ -7,7 +7,7 @@ export const Loader = () => {
       <NewtonsCradle
         size={40}
         speed={1.4}
-        color="black"
+        color= "#f2f2f2"
       />
     </div>
   )

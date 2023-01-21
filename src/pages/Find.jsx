@@ -14,7 +14,7 @@ export const Find = () => {
 
   return (
     <div className='container-find'>
-      <p>Exsten <span>{filtered.length}</span> pokemons</p>
+      <p>Existen <span>{filtered.length}</span> pokemons</p>
 
       <div className="card-list-pokemon conteiner">
         {filtered.map(pokemon => <Card pokemon={pokemon} key={pokemon.id} />)}

@@ -25,7 +25,7 @@ export const Header = () => {
           <img className='pokeball'
             src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png'
             alt='pokeball'
-            width={'40px'} height={'40px'}
+            width={'60px'} height={'60px'}
           />
         </Link>
         <form onSubmit={onSubmit}>

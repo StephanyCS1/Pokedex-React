@@ -31,7 +31,7 @@ export const Home = () => {
 				</div>
 			</div>
 			<PokemonList />
-			{/* <Filter /> */}
+			<Filter /> 
 			<div className="container-load-more container">
 				<button className="btn btn-load-more" onClick={onClickLoad}>
 					Cargar más pokemons

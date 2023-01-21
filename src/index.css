@@ -1,8 +1,13 @@
 *{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(54, 52, 50);
+  font-size: 20px;
+  background-color: rgb(231, 214, 197);
 }
-
+@media (min-width: 600px) {
+  .root {
+    width: 50%;
+  }
+}
 .root {
   min-height: 100%;
   margin:0px auto;
@@ -14,17 +19,19 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
 	padding: 40px 0;
 }
 
-eader form {
+header form {
 	display: flex;
 	align-items: center;
-
 	gap: 15px;
 }
 
+.valueSearch{
+  background-color: rgb(232, 214, 196);
+  color: rgb(2, 31, 57);
+}
 .form-group {
 	display: flex;
 	align-items: center;
@@ -72,9 +79,14 @@ eader form {
   justify-content: center;
   align-items: center;
 }
-
+.card__header, .card_title, .card-types{
+  background-color:#bbb396;
+}
+.card_title{
+  color: rgb(35, 34, 34);
+}
 .card, .card__overlay{
-  background-color: rgb(114, 114, 100)!important;
+  background-color:#bbb396;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -86,7 +98,6 @@ eader form {
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
 }
-
 
 .card-list-pokemon {
   padding: 2px;
@@ -111,7 +122,7 @@ ul {
 }
 .card_image{
   width: 60%;
-  background-color: rgb(114, 114, 100)
+  background-color:#bbb396
 }
 
 a:-webkit-any-link {
@@ -124,8 +135,8 @@ a:-webkit-any-link {
   font-size: 15px;
 	padding: 5px 20px;
 	border-radius: 5px;
-	color: #fff;
-  background-color: rgb(114, 114, 100)
+	color: rgb(38, 37, 37);
+  background-color:#bbb396
 }
 .btn-search, .btn-load-more{
   background-color: #d9250e;
@@ -136,16 +147,28 @@ a:-webkit-any-link {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+.btn-load-more{
+  width: 300px;
+  height: 50px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border: none;
+  color: aliceblue;
+}
 .btn::after{
   background-color: #000000;
   color: rgb(217, 37, 14);
 } 
 
-.container-loader{
+.conteiner-loader{
 	display: flex;
 	justify-content: center;
 	margin: 200px 0;
 }
+
 .container-filter {
 	display: flex;
 }
@@ -175,7 +198,7 @@ a:-webkit-any-link {
 	width: 250px;
 
 	color: #555;
-	background-color: #f2f2f2;
+	background-color: rgb(232, 214, 196);
 	height: 100%;
 	padding-top: 140px;
 	transition: all 0.3s linear;
@@ -206,4 +229,58 @@ a:-webkit-any-link {
 
 .group-type label {
 	cursor: pointer;
+}
+
+.p-search{
+	margin-bottom: 30px;
+	font-size: 22px;
+}
+
+.p-search span{
+	font-weight: 700;
+
+}
+
+.container-find{
+  color: azure;
+  font-size: 20px;
+}
+.pokemon-info{
+  display: flex;
+}
+.card__image{
+  width: 90%;
+}
+
+.stats{
+  display: flex;
+}
+
+.stat-group{
+  margin: 5%;
+}
+div.pokemon-info-detail{
+  width: 90%;
+  padding: 2%;
+  border-color: #d9250e;
+}
+
+#text{
+  color: rgb(55, 55, 55);
+}
+#title{
+  color:#d9250e;
+}
+#stat{
+  color: #d9250e;
+  font-weight: bolder;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+}
+
+.id-pokemon{
+  margin-right: 20px;
 }
