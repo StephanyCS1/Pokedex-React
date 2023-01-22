@@ -31,9 +31,6 @@ export const DetailPoke = () => {
         ) : (
           <section className='conteiner pokemon'>
             <div className='pokemon-info'>
-              <div className='pokemon-img-detail'>
-                <img src={pokemon.sprites.other.home.front_default} className="card__image" alt={pokemon?.name} />
-              </div>
               <div className='pokemon-info-detail'>
                 <div className='title'>
                   <h3 id="title" className='id-pokemon' >N° {pokemon.id}</h3>
@@ -66,7 +63,7 @@ export const DetailPoke = () => {
                       </span>
                     </div>
                     <div className='stat-group'>
-                      <span  id="stat">Attack</span>
+                      <span id="stat">Attack</span>
                       <div className='value-stat'></div>
                       <span id="text" className='counter-stat'>
                         {pokemon.stats[1].base_stat}
@@ -103,6 +100,9 @@ export const DetailPoke = () => {
                   </div>
                 </div>
               </div>
+                <div className='pokemon-img-detail'>
+                  <img src={pokemon.sprites.other.home.front_default} className="card__image" alt={pokemon?.name} />
+                </div>
             </div>
           </section>
         )

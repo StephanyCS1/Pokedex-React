@@ -1,13 +1,13 @@
-import React , { useContext } from 'react'
+import React, { useContext } from 'react'
 import { PokemonContext } from '../Context/PokemonContext'
 
 export const Filter = () => {
 
-  const {active, handleCheck} = useContext(PokemonContext)
+	const { active, handleCheck } = useContext(PokemonContext)
 
-  return (
+	return (
 
-    <div className={`container-filters ${active ? 'active' : ''}`}>
+		<div className={`container-filters ${active ? 'active' : ''}`}>
 			<div className='filter-by-type'>
 				<span>Tipo</span>
 
@@ -175,5 +175,5 @@ export const Filter = () => {
 				</div>
 			</div>
 		</div>
-  )
+	)
 }
